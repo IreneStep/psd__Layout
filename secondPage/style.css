@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+}
+header {
+  height: 14vh;;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.header__logo {
+  padding-left: 5%;
+  padding-top: 1vh;
+}
+.header__account {
+  background-color: #00b3be;
+  width: 30%;
+  height: 7vh;
+  position: relative;
+}
+
+.header__search {
+  position: relative;
+  border-bottom: 2px solid #00b3be;
+  display: inline-table;
+  width: 25%;
+  padding-top: 3vh;
+}
+.header__search button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 3vh;
+}
+.header__search input, button {
+  background-color: #fff;
+  border-style: none;
+  outline: none;
+}
+.account__nickname {
+  color: #fff;
+  margin: auto 0;
+}
+.avatar__icon {
+  margin: auto 0;
+  padding-right: 5%;
+}
+.account__avatar {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.wrapper__account {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.account__sign__out img {
+  padding-top: 50%;
+  cursor: pointer;
+}
+.content__box {
+  height: 80vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box__product {
+position: relative;
+height: 230px;
+}
+.product__img {
+  height: 200px;
+  width: 320px;
+  position: relative;
+}
+.product__img img{
+  position: absolute;
+  padding-top: 5%;
+  width: 100%;
+  height: auto;
+}
+.product__title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00b3be;
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:30px;
+}
+.title__text {
+  padding: 5px;
+  color: #fff;
+}
+.title__icon {
+  padding: 5px;
+}
+footer {
+  background-color: #00b3be;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+}
+footer p{
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  font-size: large;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__box {
+    justify-content: space-evenly;
+  }
+}
+ @media screen and (max-width: 426px) {
+   header {
+    height: 27vh;
+    width: 75%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+   }
+   .header__search {
+     width: 100%;
+   }
+   .header__account {
+     width: 100%;
+   }
+   .header__logo {
+     padding-left: 0;
+   }
+   .content__box {
+     height: 67vh;
+   }
+ }
+ @media screen and (max-width: 376px) {
+  header {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 320px) {
+  header {
+    width: 100%;
+  }
+}
+
+
