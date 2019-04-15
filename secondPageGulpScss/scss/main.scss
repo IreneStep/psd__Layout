@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+.header {
+    height: 14vh;;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    @media screen and (max-width: 426px) {
+        height: 27vh;
+        width: 75%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 376px) {
+        width: 85%;
+    }
+    @media screen and (max-width: 320px) {
+        width: 100%;
+    }
+    &__logo {
+        padding-left: 5%;
+        padding-top: 1vh;
+        @media screen and (max-width: 426px) {
+            padding-left: 0;
+        }
+    }
+    &__search {
+        position: relative;
+        border-bottom: 2px solid #00b3be;
+        display: inline-table;
+        width: 25%;
+        padding-top: 3vh;
+        @media screen and (max-width: 426px) {
+            width: 100%;
+        }
+            button {
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding-top: 3vh;
+                background-color: #fff;
+                border-style: none;
+                outline: none;                        
+            }
+            input {
+                background-color: #fff;
+                border-style: none;
+                outline: none;             
+            }
+    }
+    &__account {
+      background-color: #00b3be;
+      width: 30%;
+      height: 7vh;
+      position: relative;
+      @media screen and (max-width: 426px) {
+          width: 100%;
+      }
+          &__wrap {
+              margin: 0 auto;
+              width: 90%;
+              height: 100%;
+              display: flex;
+              justify-content: space-between;
+              &__avatar {
+                display: flex;
+                justify-content: start;
+                width: 100%;
+                &__icon {
+                   margin: auto 0;
+                   padding-right: 5%;
+                }     
+                &__nickname {
+                    color: #fff;
+                    margin: auto 0;
+                
+                }                        
+              }
+          }
+              &__sign__out {
+              img {
+                padding-top: 50%;
+                cursor: pointer;              
+              }
+          }
+    }
+}
+
+.content__box {
+  height: 80vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+      @media screen and (max-width: 1024px) {
+        justify-content: space-evenly;
+      }
+      @media screen and (max-width: 426px) {
+          height: 67vh;
+      }
+      &__product {
+        position: relative;
+        height: 230px;
+            &__img {
+              height: 200px;
+              width: 320px;
+              position: relative;  
+                  img {
+                    position: absolute;
+                    padding-top: 5%;
+                    width: 100%;
+                    height: auto;                     
+                  }          
+            }
+            &__title {
+              display: flex;
+              justify-content: space-between;
+              background-color: #00b3be;
+              margin-top: 0;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height:30px; 
+                  &__text {
+                    padding: 5px;
+                    color: #fff;                  
+                  } 
+                  &__icon {
+                    padding: 5px;
+                  }          
+            }
+      }
+}
+footer {
+  background-color: #00b3be;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6vh;
+      p {
+        text-align: center;
+        padding-top: 10px;
+        color: #fff;
+        font-size: large;      
+      }
+}
+
+
+
+
+
+
+
+
+
